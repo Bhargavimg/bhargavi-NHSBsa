@@ -59,7 +59,7 @@ public class CommonFunctions
     {
         System.out.println("expect browser name " + expected_url);
         String actual_url = driver.getCurrentUrl();
-        System.out.println("actual broswer name" + actual_url);
+        System.out.println("actual browser name" + actual_url);
         Assert.assertEquals(actual_url,expected_url);
     }
 
@@ -90,7 +90,7 @@ public class CommonFunctions
     {
         TakesScreenshot screenshot = ((TakesScreenshot) driver);
         File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
-        File destFile = new File(FilePaths.errorShotsPath+"/"+fileName);
+        File destFile = new File(FilePaths.screenShotsPath+"/"+fileName);
         FileUtils.copyFile(srcFile,destFile);
     }
 

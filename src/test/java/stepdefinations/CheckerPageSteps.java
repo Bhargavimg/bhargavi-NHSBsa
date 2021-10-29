@@ -1,5 +1,6 @@
 package stepdefinations;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -329,7 +330,9 @@ import utils.CommonFunctions;
         }
 
 
+        @And("I select option {string} on paid-universal-credit page and click next")
+        public void iSelectOptionOnPaidUniversalCreditPageAndClickNext(String arg0) {
 
-
+        }
     }
 
